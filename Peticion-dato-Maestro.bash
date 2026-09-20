@@ -50,7 +50,7 @@ curl -s --location --request GET \
     }
 }" | jq
 
-
+#Resultado
   "ts": "1789147717",
   "_id": "474001577",
   "result": {
