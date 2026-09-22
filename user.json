@@ -1,9 +1,0 @@
-{
-    email1:{
-        email:"fotocopiacir@grupoyc.com"
-        comment:"Fotocopiadora"
-    }
-
-}
-
-jo -p name=algo

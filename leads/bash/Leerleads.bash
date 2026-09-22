@@ -1,5 +1,5 @@
-curl -X POST \
-'https://api.pilotsolution.net/v1/welcomes/read.php' \
+#listar lead individual
+curl -L -X POST 'https://api.pilotsolution.net/v1/welcomes/read.php' \
 --header 'content-type: application/json' \
 --data-raw "{
     \"data\": {
@@ -13,13 +13,13 @@ curl -X POST \
     }
 }" | jq
 
-
+#Listar leads
 curl -X POST \
 'https://api.pilotsolution.net/v1/welcomes/list.php' \
 --header 'content-type: application/json' \
 --data-raw "{
     \"data\": {
-        \"limit\": 20,
+        \"limit\":10,
         \"page\": 1,
         \"filters\": [
             {
@@ -30,7 +30,7 @@ curl -X POST \
         ],
         \"wildCard\": \"*\",
         \"sorts\": {
-            \"field\": \"updated\",
+            \"field\": \"welcome_email\",
             \"order\": \"DESC\"
         }
     },
