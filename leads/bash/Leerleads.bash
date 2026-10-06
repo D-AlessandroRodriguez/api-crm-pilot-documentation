@@ -41,3 +41,17 @@ curl -X POST \
         \"access_token\": \"$TOKEN\"
     }
 }" | jq
+
+"entitydata": [
+                {
+                    "id": "1", 
+                    "code": "1", 
+                    "name": "Nuevo FORD",
+                    "business_deleted": "0",
+                    "business_visible": 1,
+                    "business_visual_order": "1",
+                    "audit_dt": "2026-06-23T17:09:18+0000",
+                    "audit_usr": "85955",
+                    "business_behavior": {"code": "NEW-VEHICLES"},
+                    "business_require_product_of_interest": 0},
+                }

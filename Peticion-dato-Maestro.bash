@@ -39,7 +39,7 @@ curl -s --location --request GET \
 --header 'content-type: application/json' \
 --data-raw "{
     \"data\": {
-        \"master\": \"workshop_service\"
+        \"master\": \"business_type\"
     },
     \"header\": {
         \"FlowName\": \"masterdata_read\",
